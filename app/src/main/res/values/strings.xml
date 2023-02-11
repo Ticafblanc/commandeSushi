@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ES01_40 (2713413)</string>
+    <string name="total_payer">Total à Payer</string>
+    <string name="de_tofus"># de tofus</string>
+    <string name="agedashi_tofu_9_80">Agedashi Tofu 9,80$</string>
+    <string name="sushi_tacos_6_75">Sushi Tacos 6,75$</string>
+    <string name="de_sushi"># de sushi</string>
+    <string name="juste_sushi">Juste Sushi</string>
+    <string name="total">total</string>
+    <string name="effacer">Effacer</string>
+    <string name="temari_bombe_7_50">Temari Bombe 7.50$</string>
+    <string name="de_tamari"># de tamari</string>
+    <string name="error_trop_sushi" >Vous ne pouvez commander plus de 1000 sushis</string>
+    <string name="error_trop_tamari">Vous ne pouvez commander plus de 1000 tamaris</string>
+    <string name="error_trop_tofu">Vous ne pouvez commander plus de 1000 tofus</string>
+    <string name="error_vide">Entrer des valeurs</string>
+    <string name="error_negatif">Les nombres de doivent etre positif</string>
+</resources>

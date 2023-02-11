@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TextTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:text="@string/total_payer"
+        android:textAlignment="textStart"
+        android:textColor="@color/purple_700"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Reponse"
+        app:layout_constraintEnd_toEndOf="@+id/TextTofu"
+        app:layout_constraintStart_toStartOf="@+id/TextTofu"
+        app:layout_constraintTop_toTopOf="@+id/Reponse" />
+
+    <TextView
+        android:id="@+id/Reponse"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="gravity"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/NumberTofus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/NumberTofus"
+        app:layout_constraintTop_toBottomOf="@+id/NumberTofus" />
+
+    <EditText
+        android:id="@+id/NumberTofus"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/de_tofus"
+        android:inputType="numberSigned"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/Reponse"
+        app:layout_constraintEnd_toEndOf="@+id/NumberTamari"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/NumberTamari"
+        app:layout_constraintTop_toBottomOf="@+id/NumberTamari"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/TextTofu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:text="@string/agedashi_tofu_9_80"
+        android:textAlignment="textStart"
+        android:textColor="@color/purple_700"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/NumberTofus"
+        app:layout_constraintEnd_toEndOf="@+id/TextTemari"
+        app:layout_constraintStart_toStartOf="@+id/TextTemari"
+        app:layout_constraintTop_toTopOf="@+id/NumberTofus" />
+
+    <TextView
+        android:id="@+id/TextSushi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:elegantTextHeight="true"
+        android:text="@string/sushi_tacos_6_75"
+        android:textAlignment="textStart"
+        android:textColor="@color/purple_700"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/NumberSushi"
+        app:layout_constraintEnd_toStartOf="@+id/NumberSushi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/NumberSushi" />
+
+    <EditText
+        android:id="@+id/NumberSushi"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/de_sushi"
+        android:inputType="numberSigned"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/NumberTamari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/TextSushi"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonEffacer"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:autoText="false"
+        android:background="@color/yellow"
+        android:elegantTextHeight="true"
+        android:text="@string/juste_sushi"
+        android:textAlignment="center"
+        android:textColor="#388E3C"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="Deprecated,TextViewEdits" />
+
+    <Button
+        android:id="@+id/ButtonTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="FunctTotal"
+        android:text="@string/total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonEffacer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/ButtonEffacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:onClick="FunctEffacer"
+        android:text="@string/effacer"
+        app:layout_constraintBottom_toBottomOf="@+id/ButtonTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ButtonTotal"
+        app:layout_constraintTop_toTopOf="@+id/ButtonTotal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TextTemari"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:text="@string/temari_bombe_7_50"
+        android:textAlignment="textStart"
+        android:textColor="@color/purple_700"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/NumberTamari"
+        app:layout_constraintEnd_toEndOf="@+id/TextSushi"
+        app:layout_constraintStart_toStartOf="@+id/TextSushi"
+        app:layout_constraintTop_toTopOf="@+id/NumberTamari" />
+
+    <EditText
+        android:id="@+id/NumberTamari"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/de_tamari"
+        android:inputType="numberSigned"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/NumberTofus"
+        app:layout_constraintEnd_toEndOf="@+id/NumberSushi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/NumberSushi"
+        app:layout_constraintTop_toBottomOf="@+id/NumberSushi"
+        tools:ignore="VisualLintTextFieldSize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
